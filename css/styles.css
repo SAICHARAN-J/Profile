@@ -9,10 +9,9 @@ nav>ul>li{
 	float:left;	
 	padding:2% 0% 2% 2%;
 	list-style-type: none;
-	width:19%;
+	width:20%;
 	border-bottom: 4px solid #007BB6;
-	border:1px solid black;
-
+	margin-left: -2%;
 }
 
 nav>ul>li>a{
