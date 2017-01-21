@@ -1,0 +1,31 @@
+nav{
+	background-color: #007BB6;
+}
+
+
+nav>ul>li{
+	box-sizing: border-box;
+	display:inline-block;
+	float:left;	
+	padding:2% 0% 2% 2%;
+	list-style-type: none;
+	width:19%;
+	border-bottom: 4px solid #007BB6;
+	border:1px solid black;
+
+}
+
+nav>ul>li>a{
+	display: inline-block;
+	width: 100%;
+	padding:5%;
+	box-sizing: border-box;
+	margin-left:5%;
+	padding-left: 25%;
+
+}
+
+li:hover{
+	border-bottom: 4px solid white;
+}
+
