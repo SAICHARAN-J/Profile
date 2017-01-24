@@ -29,3 +29,7 @@ nav>ul>li>a{
 li:hover{
 	border-bottom: 4px solid white;
 }
+
+img{
+	width:36px;
+}
