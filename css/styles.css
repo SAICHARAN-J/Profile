@@ -1,10 +1,19 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	font-family:sans-serif;
 }
 
 body{
 	background-color: #f5f5f5 ;
+}
+
+#main_div{
+	margin: 0% 5% 0% 5%;
+}
+
+.jumbo{
+	margin-top:12%;
 }
 
 nav{
@@ -32,6 +41,23 @@ li:hover{
 	border-bottom: 4px solid white;
 }
 
-img{
-	width:38px;
+.nav_image{
+	width:60%;
 }
+
+#personal{
+	position: relative;
+	background-color: white;
+	margin-top: -5%;
+	
+}
+#name,#college_name{
+text-align: center;
+}
+
+.image_profile{
+	width:30%;
+	margin: -12% 5% 3% 35%; 
+}
+
+
