@@ -48,9 +48,10 @@ li:hover{
 #personal{
 	position: relative;
 	background-color: white;
-	margin-top: -5%;
-	
+	margin-top: -8%;
+
 }
+
 #name,#college_name{
 text-align: center;
 }
