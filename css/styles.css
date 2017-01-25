@@ -77,24 +77,37 @@ li:hover{
 	font-size: 0.7em;
 }
 
+
+#edu_header{
+	font-variant: small-caps;
+	margin: 0% 0% 0% 5%;
+	padding-top: 4%;
+	color: #0077b5;
+}
+
 .edu{
 	font-size: 0.9em;
 	margin-top: 1.5%;
-
 }
 #education{
 	margin-top: 3%;
 	background-color: white;
 }
 
-.lpu{
+.lpu,.school,.narayana{
+	width: 14%;
+	margin: -15% 0% 0% 5%;
 	display: inline-block;
-	width:12%;
-	margin: -13% 0% 0% 5%;
-
 }
 
 .edu_block{
+	margin: 2% 0% 3% 7%;
 	display: inline-block;
-	margin: 2% 0% 0% 3%;
+}
+
+.edu_main{
+	font-size: 0.9em;
+}
+.edu_sub{
+	font-size: 0.8em;
 }
