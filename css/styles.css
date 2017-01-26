@@ -46,6 +46,11 @@ li:hover{
 	width:60%;
 }
 
+.image_heading{
+	text-align: center;
+
+}
+
 #personal{
 	position: relative;
 	background-color: white;
