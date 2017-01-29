@@ -97,6 +97,7 @@ li:hover{
 #certifications,#education{
 	margin-top: 3%;
 	background-color: white;
+
 }
 
 .lpu,.school,.narayana{
@@ -117,17 +118,16 @@ li:hover{
 	font-size: 0.8em;
 }
 .cer_sub_block{
-	margin-top: 6%;
+	margin-top: 1%;
 }
 
 .cer_image{
-	width:15%;
+	width:10%;
 }
 
 .certi_blocks{
 	margin-left: 27%;
 }
-
 .btn{
 	opacity: 0.8;
 	border:2px solid #007BB6;
