@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html ng-app="profileApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Profile</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-fixed-top">
+		<ul>
+			<li><a href="#" class="personal"><img src="images/personal.png" alt="Personal" class="nav_image"/></a></li>
+			<li><a href="#" class="accomplishments"><img src="images/accomplishments.png" alt="Accomplishments" class="nav_image"/></a></li>
+			<li><a href="#" class="education"><img src="images/education.png" alt="Education" class="nav_image"/></a></li>
+			<li><a href="#" class="technical"><img src="images/technical.png" alt="Technical" class="nav_image"/></a></li>
+			<li><a href="#" class="contact"><img src="images/contact.png" alt="Contact" class="nav_image"/></a></li>
+		</ul>	
+	</nav>
+
+	<img src="images/nav.png" class="img-responsive jumbo"/>
+	<div id="main_div"> 
+		<section id="personal">
+			<img src="images/profile.jpg" alt="Profile_pic" class="img-circle img-rounded img-thumbnail image_profile" data-toggle="modal" data-target="#modal"/>
+
+				<div id="modal" class="modal fade">
+					<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title image_heading">J SAI CHARAN</h3>
+						</div>
+
+					<div class="modal-body">
+					<img src="images/profile.jpg" alt="Profile_pic" class=" img-thumbnail"/> 
+					</div>
+
+					</div>	
+					</div>
+				</div>
+
+
+			<div id="name">J SAI CHARAN &nbsp;<img src="images/connections.png" alt="connections" class="img-rounded img-circle connections"><span class="connections_number">&nbsp;56</span></div>
+			<div id="stream">B.Tech(Hons)-ECE</div>
+			<div id="college_name">Lovely Professional University</div>
+			<div>&nbsp;</div>
+		</section>
+
+		<section id="accomplishments" ng-controller="profileController as pc">
+		
+		<section id="certifications">
+			
+			<header class="certi_head">Certifications</header>
+
+				<div class="certi_blocks" ng-repeat="repeat in pc.certifications.content">
+					<div class="cer cer_main">{{repeat.website}}<a href={{repeat.source}} class="btn certi_link">See Certificate</a>
+					</div>
+					<div class="cer_sub_block">	
+						<div class="cer cer_sub">{{repeat.name}}</div>
+						<div class="cer_image cer_sub"><img src={{repeat.image_source}} class="img-thumbnail" alt="{{repeat.website}}"/>
+						</div><hr>
+					</div>
+				</div>
+
+
+
+
+		</section>
+
+		</section>
+
+
+
+
+		<section id="education">
+
+		<header id="edu_header">Education</header>
+			
+			<div class="blocks">
+			<img src="images/lpu.jpg" class="img-circle img-rounded  lpu"/>
+			<div class="edu_block">
+				<div class="edu edu_main">Lovely Professional University</div>
+				<div class="edu edu_sub">Punjab</div>
+				<div class="edu edu_sub">Electronics & Communication Engineering</div>
+				<div class="edu edu_sub">2014-2018</div>
+			</div>
+			</div>
+
+			<div class="blocks">	
+			<img src="images/narayana.jpg" class="img-circle img-rounded narayana"/>
+			<div class="edu_block">
+				<div class="edu edu_main">Narayana Junior College</div>
+				<div class="edu edu_sub">Hyderabad</div>
+				<div class="edu edu_sub">2014</div>
+			</div>	
+			</div>
+
+			<div class="blocks">
+			<img src="images/school.png" class="img-circle img-rounded school"/>
+			<div class="edu_block">
+				<div class="edu edu_main">Bhavan's Sri Ramakrishna Vidyalaya</div>
+				<div class="edu edu_sub">Sainikpuri</div>
+				<div class="edu edu_sub">2012</div>
+			</div>
+			</div>
+		
+
+		</section>
+
+		
+	
+	</div>
+
+
+<script src="angular/angular.min.js"></script>
+
+<script>
+var app = angular.module("profileApp",[]);
+
+app.controller("profileController",function(){
+
+	var certifications = {
+		content : [
+		{
+			website:'Coursera',
+			source:'images/one.png',
+			link:'wikipedia.org',
+			name : 'Interactivity with Javascript',
+			image_source:'images/coursera.jpg'
+
+		},
+		{
+			website:'Coursera',
+			source:'images/two.png',
+			link:'facebook.com',
+			name : 'HTML, CSS and JS',
+			image_source:'images/coursera.jpg'
+
+		}
+		
+			
+
+		]};
+	this.certifications = certifications;
+});
+
+
+</script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
