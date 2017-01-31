@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="profileApp">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -49,44 +49,21 @@
 			<div>&nbsp;</div>
 		</section>
 
-		<section id="accomplishments">
+		<section id="accomplishments" ng-controller="profileController as pc">
 		
 		<section id="certifications">
 			
 			<header class="certi_head">Certifications</header>
 
-				<div class="certi_blocks">
-					<div class="cer cer_main">Coursera<a data-target="#certi" data-toggle="modal"  class="btn">See Certificate</a>
+				<div class="certi_blocks" ng-repeat="repeat in pc.certifications.content">
+					<div class="cer cer_main">{{repeat.website}}<a href={{repeat.source}} class="btn certi_link">See Certificate</a>
 					</div>
-						<div class="modal fade" id="certi">
-						
-							<div class="modal-dialog">
-							<div class="modal-content">
-								
-								
-								<div class="modal-header">
-								
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h2 class="modal-title certi_heading">Interactivity with Javascript</h2>
-								</div>		
-
-								<div class="modal-body">
-								<img src="images/one.png" alt="Certificate" class="img-thumbnail" /> 
-								</div>
-
-							</div>	
-							</div>
-						
-						</div>
-
-
 					<div class="cer_sub_block">	
-						<div class="cer cer_sub">Interactivity with Javascript</div>
-						<div class="cer_image cer_sub"><img src="images/coursera.jpg" class="img-responsive" alt="Coursera"/>
-						</div>
+						<div class="cer cer_sub">{{repeat.name}}</div>
+						<div class="cer_image cer_sub"><img src={{repeat.image_source}} class="img-thumbnail" alt="{{repeat.website}}"/>
+						</div><hr>
 					</div>
 				</div>
-
 
 
 
@@ -138,6 +115,40 @@
 	</div>
 
 
+<script src="angular/angular.min.js"></script>
+
+<script>
+var app = angular.module("profileApp",[]);
+
+app.controller("profileController",function(){
+
+	var certifications = {
+		content : [
+		{
+			website:'Coursera',
+			source:'images/one.png',
+			link:'wikipedia.org',
+			name : 'Interactivity with Javascript',
+			image_source:'images/coursera.jpg'
+
+		},
+		{
+			website:'Coursera',
+			source:'images/two.png',
+			link:'facebook.com',
+			name : 'HTML, CSS and JS',
+			image_source:'images/coursera.jpg'
+
+		}
+		
+			
+
+		]};
+	this.certifications = certifications;
+});
+
+
+</script>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
