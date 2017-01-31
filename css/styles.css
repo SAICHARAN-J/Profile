@@ -178,3 +178,7 @@ li:hover{
 .certi_heading_main{
 	font-size:20px;
 }
+
+.link:visited{
+	color:white;
+}
