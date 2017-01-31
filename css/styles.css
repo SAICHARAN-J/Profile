@@ -3,6 +3,7 @@
 	padding: 0px;
 	font-family:sans-serif;
 
+
 }
 
 body{
@@ -48,7 +49,6 @@ li:hover{
 
 .image_heading{
 	text-align: center;
-
 }
 
 .image_profile{
@@ -64,7 +64,6 @@ li:hover{
 
 #name,#college_name,#stream{
 	text-align: center;
-
 }
 #stream{
 	font-size:0.9em;
@@ -85,7 +84,7 @@ li:hover{
 
 #edu_header,.certi_head{
 	font-variant: small-caps;
-	margin: 0% 0% 0% 5%;
+	margin: 0% 0% 2% 5%;
 	padding-top: 4%;
 	color: #0077b5;
 }
@@ -125,14 +124,13 @@ li:hover{
 	width:10%;
 }
 
-.certi_blocks{
-	margin-left: 27%;
-}
 .btn{
 	opacity: 0.8;
-	border:2px solid #007BB6;
+	border:1px solid #007BB6;
 	height: 5vh;
-	margin-left: 25%;
+	margin-left: 15%;
+	width: 50%;
+	font-size: 0.9em;
 }
 
 .certi_heading{
@@ -141,3 +139,18 @@ li:hover{
 	font-size: 14px;
 	font-variant: small-caps;
 }
+.cer_sub{
+	margin-top:2%;
+}
+.certi_right_content{
+	display: inline-block;
+	width:60%;
+	font-size: 16px;
+}
+.certi_left_image{
+	display: inline-block;
+	float: left;
+	width:30%;
+	margin: 1% 5% 1% 5%;
+}
+
