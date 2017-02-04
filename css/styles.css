@@ -80,7 +80,7 @@ li:hover{
 }
 
 
-#edu_header,.certi_head,.projects_header,.intern_header,.technical_head{
+#edu_header,.certi_head,.projects_header,.intern_header,.technical_head,.contact_header{
 	font-variant: small-caps;
 	margin: 0% 0% 2% 5%;
 	padding-top: 4%;
@@ -91,7 +91,7 @@ li:hover{
 	font-size: 0.9em;
 	margin-top: 1.5%;
 }
-#certifications,#education,#projects,#intern,#skills{
+#certifications,#education,#projects,#intern,#skills,#contact_div{
 	margin-top: 3%;
 	background-color: white;
 
@@ -194,7 +194,6 @@ li:hover{
 .project_video,.intern_video{
 	width:100%;
 }
-
 .project_right_content,.intern_right_content{
 	display: inline-block;
 	margin-left:3%;
@@ -210,7 +209,6 @@ li:hover{
 	margin-top:8%;
 	font-size: 14px;
 }
-
 .technical_tech{
 	display: inline-block;
 	font-variant: small-caps;
@@ -220,5 +218,40 @@ li:hover{
 	color:#000000;
 	margin-top:5%;
 	background-color: #ebeae6;
-	border-radius: 20px;	
+	border-radius: 6px;	
+}
+
+.contact_a{
+	width:55%;
+	display: inline-block;
+	float: left;
+	margin-top:5%;
+
+}
+.calling_image{
+	width:10%;
+	margin-left: 20%;
+}
+
+.social{
+	border-right:1px solid #b6b5b1;
+}
+
+.calling_right_content{
+	width:40%;
+	margin-left: 60%;
+	margin-top:5%;
+	font-weight: bolder;
+}
+
+.a_class_call{
+	text-decoration: none;
+}
+.map{
+	margin-top: 15%;
+	margin-left: 2.5%;
+}
+.location_image{
+	width:20%;
+	margin-left:39%;
 }
