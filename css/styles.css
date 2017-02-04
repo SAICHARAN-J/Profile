@@ -211,7 +211,7 @@ li:hover{
 	font-size: 14px;
 }
 
-.technical{
+.technical_tech{
 	display: inline-block;
 	font-variant: small-caps;
 	margin-left:5%;
@@ -221,6 +221,5 @@ li:hover{
 	margin-top:5%;
 	border: 1px solid black;
 	background-color: #007BB6;
-	border-radius: 20px;
-	
+	border-radius: 20px;	
 }
