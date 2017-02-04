@@ -80,7 +80,7 @@ li:hover{
 }
 
 
-#edu_header,.certi_head,.projects_header{
+#edu_header,.certi_head,.projects_header,.intern_header{
 	font-variant: small-caps;
 	margin: 0% 0% 2% 5%;
 	padding-top: 4%;
@@ -91,7 +91,7 @@ li:hover{
 	font-size: 0.9em;
 	margin-top: 1.5%;
 }
-#certifications,#education,#projects{
+#certifications,#education,#projects,#intern{
 	margin-top: 3%;
 	background-color: white;
 
@@ -132,7 +132,7 @@ li:hover{
 	font-size: 0.9em;
 }
 
-.certi_heading,.video_heading{
+.certi_heading,.project_heading,.intern_heading{
 	color:#007bb6;
 	text-align: center;
 	font-size: 14px;
@@ -183,25 +183,31 @@ li:hover{
 	color:white;
 }
 
-.project_image{
+.project_image,.intern_image{
 	width:30%;
 	margin-left:5%;
 	display: inline-block;
 	float: left;
+
 }
 
-.project_video{
+.project_video,.intern_video{
 	width:100%;
 }
 
-.project_right_content{
+.project_right_content,.intern_right_content{
 	display: inline-block;
 	margin-left:3%;
 	width:60%;
 	font-size: 0.8em;
 	margin-top: -2%;
 }
-.project_right_content>h6{
+.project_right_content>h6,.intern_right_content>h6{
 	color:#007bb6;
 	font-variant: small-caps;
+}
+.video_body,.intern_body{
+	margin-top:8%;
+	font-size: 14px;
+
 }
