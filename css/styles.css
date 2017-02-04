@@ -80,7 +80,7 @@ li:hover{
 }
 
 
-#edu_header,.certi_head,.projects_header,.intern_header{
+#edu_header,.certi_head,.projects_header,.intern_header,.technical_head{
 	font-variant: small-caps;
 	margin: 0% 0% 2% 5%;
 	padding-top: 4%;
@@ -217,9 +217,8 @@ li:hover{
 	margin-left:5%;
 	width:40%;
 	padding-left:5%;
-	color:#ffffff;
+	color:#000000;
 	margin-top:5%;
-	border: 1px solid black;
-	background-color: #007BB6;
+	background-color: #edefe1;
 	border-radius: 20px;	
 }
