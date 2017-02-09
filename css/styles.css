@@ -119,13 +119,15 @@ li:active{
 
 .lpu,.school,.narayana{
 	width: 14%;
-	margin: -15% 0% 0% 5%;
+	margin: -20% 0% 0% 5%;
 	display: inline-block;
+	
 }
 
 .edu_block{
 	margin: 2% 0% 3% 7%;
 	display: inline-block;
+	font-size: 0.85em;
 }
 
 .edu_main,.cer_main{
@@ -324,6 +326,11 @@ iframe{
 	padding-bottom: 2%;
 	}
 
+	.lpu,.school,.narayana{
+	margin: -10% 0% 0% 5%;
+	}
+	
+
 
 
 }
@@ -350,6 +357,10 @@ iframe{
 	
 	nav>ul>li{
 	margin-top: 1%;
+	}
+
+	.lpu,.school,.narayana{
+	margin: -10% 0% 0% 5%;
 	}
 
 }
@@ -380,6 +391,9 @@ iframe{
 	}
 
 
+
+
+
 }
 
 @media screen and (min-width:1200px){
@@ -404,6 +418,15 @@ iframe{
 	nav>ul>li{
 	margin-top: 1%;
 	}
+
+
+.lpu,.school,.narayana{
+	width: 14%;
+	margin: -10% 0% 0% 5%;
+	display: inline-block;
+	
+}
+
 
 
 }
