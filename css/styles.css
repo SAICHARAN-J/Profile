@@ -156,7 +156,7 @@ li:active{
 .certi_heading,.project_heading,.intern_heading{
 	color:#007bb6;
 	text-align: center;
-	font-size: 14px;
+	font-size: 20px;
 	font-variant: small-caps;
 }
 .cer_sub{
@@ -211,7 +211,7 @@ li:active{
 	margin-left:5%;
 	display: inline-block;
 	float: left;
-	margin-top:1%;
+	margin-top:0%;
 	clear: both;
 }
 
@@ -224,6 +224,15 @@ li:active{
 	width:60%;
 	font-size: 0.9em;
 	
+}
+
+.intern_image_marketing{
+	width: 100%;
+}
+
+.video_exception{
+	margin: 0% 27% 0% 27%;
+	width:55%;
 }
 
 .project_right_content>h6,.intern_right_content>h6{
@@ -282,6 +291,7 @@ li:active{
 
 iframe{
 	width: 100%;
+	border: 0px;
 }
 
 }
